@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:padding="5dp"
+        android:background="@color/purple_200"
+        >
+
+        <ImageView
+
+            android:id="@+id/profileImage"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:src="@drawable/profile_icon"
+            android:layout_rowSpan="2"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/contactName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+
+            />
+
+        <TextView
+            android:id="@+id/contactPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+
+            />
+
+
+
+    </GridLayout>
+</LinearLayout>
